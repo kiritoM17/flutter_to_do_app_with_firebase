@@ -64,7 +64,7 @@ flutter:
     - family: SFProDisplay-Bold
       fonts:
         - asset: assets/fonts/FontsFree-Net-SFProDisplay-Bold.ttf
-          weight: 700
+          weight: 500
     - family: SFProText-Regular
       fonts:
         - asset: assets/fonts/SF-Pro-Text-Regular.otf

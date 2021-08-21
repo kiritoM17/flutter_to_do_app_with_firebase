@@ -13,6 +13,9 @@ class _HomeScreenViewState extends State<HomeScreenView> {
   @override
   Widget build(BuildContext context) {
     final Size media_size = MediaQuery.of(context).size;
+    void _nextScreen(){
+      Navigator.pushNamed(context, '/to_do_screen');
+    }
     return Scaffold(
       body: Stack(
         children: [
@@ -59,20 +62,23 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                     padding: EdgeInsets.only(
                       left: 20,
                     ),
-                    child: Container(
-                      height: 51,
-                      width: 222,
-                      decoration: BoxDecoration(
-                        color: AppColors.secondary_color,
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                      child: Center(
-                        child: Text(
-                          'Let’s Get Started',
-                          style: TextStyle(
-                            fontSize: 20,
-                            color: AppColors.white_color,
-                            fontFamily: 'SFProText-Regular'
+                    child: GestureDetector(
+                      onTap: _nextScreen,
+                      child: Container(
+                        height: 51,
+                        width: 222,
+                        decoration: BoxDecoration(
+                          color: AppColors.secondary_color,
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        child: Center(
+                          child: Text(
+                            'Let’s Get Started',
+                            style: TextStyle(
+                                fontSize: 20,
+                                color: AppColors.white_color,
+                                fontFamily: 'SFProText-Regular'
+                            ),
                           ),
                         ),
                       ),
