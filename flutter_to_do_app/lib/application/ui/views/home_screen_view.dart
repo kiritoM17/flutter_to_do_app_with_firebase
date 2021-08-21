@@ -31,13 +31,14 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(
-                    height: 80,
+                    height: 60,
                   ),
                   Text(
                     'Tasks\nManagement',
                     style: TextStyle(
                       fontSize: 46,
                       color: AppColors.primary_color,
+                      fontFamily: 'SFProDisplay-Bold'
                     ),
                   ),
                   SizedBox(
@@ -48,10 +49,11 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                     style: TextStyle(
                       fontSize: 20,
                       color: AppColors.primary_color,
+                      fontFamily: 'SFProText-Regular'
                     ),
                   ),
                   SizedBox(
-                    height: 30,
+                    height: 25,
                   ),
                   Padding(
                     padding: EdgeInsets.only(
@@ -69,14 +71,15 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                           'Let’s Get Started',
                           style: TextStyle(
                             fontSize: 20,
-                            color: AppColors.white_color
+                            color: AppColors.white_color,
+                            fontFamily: 'SFProText-Regular'
                           ),
                         ),
                       ),
                     ),
                   ),
                   SizedBox(
-                    height: 10,
+                    height: 30,
                   ),
                   Image.asset(
                     'assets/images/image_home.png',
